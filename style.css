@@ -1,0 +1,270 @@
+/* Body styles */
+body {
+
+    font-family: Arial, sans-serif; 
+    line-height: 1.6;
+}
+
+/* Header styles */
+.header {
+    padding: 15px 0;
+   
+}
+
+.logo img {
+    max-height: 50px; 
+}
+
+.nav-item .nav-link {
+    margin-right: 15px;
+    color: #99e899;
+}
+
+
+
+/* Hero section styles */
+.hero {
+    background-color: #028065;; 
+    padding: 100px 0;
+    text-align: center;
+    color: #333; 
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+
+.section {
+    padding: 80px 0;
+    background-color: rgba(2, 128, 101, 0.9);
+    background-image: url('/assets/Uploads/Blocks/Images/circle-light-top-opt.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 10%; 
+}
+
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.section p {
+    font-size: 1.1rem;
+    color: #fff; 
+}
+
+.section .btn-primary,
+.section .btn-secondary {
+    margin-top: 20px;
+}
+
+
+.footer {
+    padding: 50px 0;
+    color: #fff; 
+}
+
+.footer .logo img {
+    max-height: 40px; 
+}
+
+.footer .nav-item {
+    margin: 0 10px;
+}
+
+
+@media (max-width: 768px) {
+    .header .logo img {
+        max-height: 40px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2.5rem; 
+    }
+
+    .hero p {
+        font-size: 1.2rem; 
+    }
+}
+
+
+
+.section {
+    padding: 80px 0;
+  }
+  
+  .feature-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .feature-box p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+  }
+  
+  .what-we-do-heading {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 32px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+
+  .section {
+    padding: 2rem 0;
+  }
+  .btn-secondary {
+    margin-top: 1rem;
+  }
+  
+
+  .hero {
+    position: relative;
+  }
+  .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .block-overlay {
+    background-color: #83deb2;
+    opacity: 1;
+  }
+  .section {
+    padding: 2rem 0;
+  }
+  .btn-secondary {
+    margin-top: 1rem;
+  }
+
+  .js-carousel {
+    margin-top: 20px;
+  }
+  
+  .slick-slide {
+    margin: 0 10px;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    font-size: 24px;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
+  .b-partners__item-wrapper {
+    text-align: center;
+  }
+  
+  .b-partners__image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
+  .custom-bg {
+    background-color: #028065;
+  }
+
+
+
+  .c-button {
+    display: inline-block;
+    padding: 12px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .c-button--theme-primary {
+    background-color: #83deb2; 
+  }
+  
+  .c-button--theme-primary:hover {
+    background-color: #62cdaa; 
+  }
+  
+  .u-box-shadow {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .block-overlay {
+    position: relative;
+    background-color: #FFFDD0; 
+    z-index: 1; 
+  }
+  
+  .block-overlay .container {
+    position: relative;
+  }
+
