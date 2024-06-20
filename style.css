@@ -51,8 +51,7 @@ body {
 
 .btn-primary,
 .btn-secondary {
-  background-color: #FEDD2D;
-  border-color: #FEDD2D;
+  background-color: #ffffff;
   color: #000000;
   padding: 0.75rem 2rem;
   margin-right: 1rem;
@@ -63,9 +62,8 @@ body {
 
 .btn-primary:hover,
 .btn-secondary:hover {
-  background-color: #C4AF3D;
-  border-color: #C4AF3D;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .block-overlay {
