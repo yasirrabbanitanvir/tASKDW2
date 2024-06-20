@@ -3,6 +3,7 @@ body {
 
     font-family: Arial, sans-serif; 
     line-height: 1.6;
+    background-color: #FFFDD0;
 }
 
 /* Header styles */
@@ -69,9 +70,11 @@ body {
 }
 
 
-.footer {
-    padding: 50px 0;
-    color: #fff; 
+#f2 {
+  border-radius: 50% 50% 0 0;
+  padding: 50px 50px;
+  height: 60vh;
+
 }
 
 .footer .logo img {
@@ -141,8 +144,8 @@ body {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #fff;
-    background-color: #007bff;
+    color: black;
+    background-color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -150,7 +153,8 @@ body {
   }
   
   .cta-button:hover {
-    background-color: #0056b3;
+    background-color: white;
+    color: black;
   }
 
   .section {
@@ -229,42 +233,87 @@ body {
   }
 
 
-
-  .c-button {
-    display: inline-block;
-    padding: 12px 32px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #333;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .c-button--theme-primary {
-    background-color: #83deb2; 
-  }
-  
-  .c-button--theme-primary:hover {
-    background-color: #62cdaa; 
-  }
-  
-  .u-box-shadow {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  }
-  
-
   .block-overlay {
     position: relative;
     background-color: #FFFDD0; 
-    z-index: 1; 
-  }
-  
-  .block-overlay .container {
-    position: relative;
   }
 
+  .block-overlay .container {
+    position: relative;
+    margin-left: 0;
+  }
+
+  .c-basic-hero__buttons-item .c-button {
+    color: black !important;
+    background-color: white !important;
+    max-width: inherit !important;
+    min-width: inherit !important;
+    border-radius: 36px;
+    margin: 20px;
+    padding: 20px 30px;
+    font-weight: normal;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 32px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .c-basic-hero__buttons-item .c-button:hover {
+    transform: scale(1.1);
+    margin: 20px; 
+  }
+  
+  .c-button--theme-quaternary,
+  .c-basic-hero__buttons-item .c-button {
+    line-height: 32px;
+    position: relative;
+    background: white !important;
+    color: black !important;
+    border-radius: 36px;
+    padding: 20px 30px;
+    font-weight: normal;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+.image-container {
+  position: relative;
+  padding: 45px 45px;
+  border-radius: 50%;
+  margin-top: 20px;
+  overflow: hidden;
+  background-color: #20c997;
+  height: 1290px;
+  width: 1384px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  clip-path: inset(0 50px);
+ 
+}
+
+
+.spacer {
+    height: 40px;
+    background-color: transparent;
+}
+
+.element {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.iframe-item {
+    flex: 1;
+}
+
+.column-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.column-content {
+    font-size: 14px;
+}
