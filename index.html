@@ -47,6 +47,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -104,36 +106,41 @@
           <h1>Acclaimed marketing talent</h1>
           <p>Backing your business growth</p>
           <div class="c-basic-hero__buttons-item">
-            <a href="/our-work" class="btn btn-primary"
-              >Our work <i class="fas fa-arrow-right"></i
-            ></a>
-            <a href="/contact-us" class="btn btn-primary"
-              >Contact us <i class="fas fa-arrow-right"></i
-            ></a>
+            <a href="/our-work" class="btn btn-secondary">
+              Our work
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="/contact-us" class="btn btn-secondary">
+              Contact us
+              <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
+        
         </div>
       </div>
     </section>
 
     <!-- Section: Expect more from your marketer -->
-    <section class="block-overlay">
+    <section class="b-iframe blocks-81 with-overlay u-background-cover default-padding" id="a1">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2>Expect more from your marketer</h2>
-            <p>
-              We drive marketing results that are meaningful to you, whether
-              it’s increasing revenue, training your team, building brand trust,
-              driving website traffic, or knocking a competitor off the top of
-              the podium.
-            </p>
-            <a href="our-work.html" class="btn btn-secondary">
-              See our work <i class="fas fa-arrow-right"></i>
-            </a>
+          <div class="row align-items-center">
+              <div class="col-lg-6 order-lg-1">
+                  <div class="embed-responsive">
+                      <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_oc5b7zac.json" background="transparent" speed="1" style="margin:0 auto; max-width:400px; max-height:400px;" loop autoplay>
+                      </lottie-player>
+                  </div>
+              </div>
+              <div class="col-lg-6 pt-5 pt-lg-0 order-lg-0">
+                  <div class="main-content">
+                      <h2>Expect more from your marketer</h2>
+                      <p>We drive marketing results that are meaningful to you, whether it’s increasing revenue, training your team, building brand trust, driving website traffic, or knocking a competitor off the top of the podium.</p>
+                      <p><a class="c-button c-button--theme-tertiary u-box-shadow" href="/our-work">See our work</a></p>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </section>
+  </section>
+  
 
     <!-- Section: Achievements -->
     <div class="image-container">
@@ -250,36 +257,54 @@
     </div>
 
     <!-- Partners Carousel -->
-    <section class="block-overlay">
-      <div class="container">
-        <h2 class="text-center my-4">Our Partners</h2>
-        <div
-          class="js-carousel slick-initialized slick-slider"
-          data-slick='{"slidesToShow":4,"slidesToScroll":1,"arrows":true,"fade":false,"autoplaySpeed":3000,"autoplay":true,"responsive":[{"breakpoint":992,"settings":{"slidesToShow":3}},{"breakpoint":768,"settings":{"slidesToShow":2}},{"breakpoint":577,"settings":{"slidesToShow":1}}]}'
-        >
-          <div class="slick-list draggable">
-            <div class="slick-track">
-              <div class="slick-slide">
-                <div class="mx-3 pb-3 d-flex flex-fill">
-                  <div
-                    class="b-partners__item-wrapper d-flex flex-column flex-fill py-5 px-3 align-items-center justify-content-center mt-4 mt-lg-0"
-                  >
-                    <div class="b-partners__image-wrapper">
-                      <img
-                        src="/assets/Uploads/Blocks/Partners/Jennian-Homes__FitMaxWzQwMCwzNjBd.png"
-                        class="img-fluid"
-                        alt="Jennian Homes"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Repeat other partner slides here -->
-            </div>
-          </div>
-        </div>
+    <div class="carousel-container">
+      <div class="carousel-slide">
+          <img src="/assets/Uploads/Blocks/Partners/Jennian-Homes__FitMaxWzQwMCwzNjBd.png" alt="Jennian Homes">
+          <img src="/assets/Uploads/Blocks/Partners/Behemoth-Brewing-logo-v2__FitMaxWzQwMCwzNjBd.png" alt="Behemoth Brewing">
+          <img src="/assets/Uploads/Blocks/Partners/Southern-Cross-Healthcare-v2__FitMaxWzQwMCwzNjBd.png" alt="Southern Cross Healthcare">
+          <img src="/assets/Uploads/Blocks/Partners/Christchurch-Casino-v4__FitMaxWzQwMCwzNjBd.png" alt="Christchurch Casino">
+          <img src="/assets/Uploads/Blocks/Partners/Shine-On__FitMaxWzQwMCwzNjBd.png" alt="Shine On">
       </div>
-    </section>
+      <div class="carousel-nav">
+          <button class="prev"><i class="fas fa-chevron-left"></i></button>
+          <button class="next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+  </div>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const carouselSlide = document.querySelector('.carousel-slide');
+        const carouselImages = document.querySelectorAll('.carousel-slide img');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+  
+        
+        const slideWidth = carouselSlide.offsetWidth / 4; // Display four images at a time
+  
+  
+        let counter = 0;
+  
+    
+        carouselImages.forEach(img => {
+            img.style.width = `${slideWidth}px`;
+        });
+  
+    
+        nextButton.addEventListener('click', () => {
+            if (counter >= carouselImages.length - 4) return;
+            counter++;
+            carouselSlide.style.transition = 'transform 0.5s ease-in-out';
+            carouselSlide.style.transform = `translateX(${-slideWidth * counter}px)`;
+        });
+  
+        prevButton.addEventListener('click', () => {
+            if (counter <= 0) return;
+            counter--;
+            carouselSlide.style.transition = 'transform 0.5s ease-in-out';
+            carouselSlide.style.transform = `translateX(${-slideWidth * counter}px)`;
+        });
+    });
+  </script>
 
     <!-- Inside Minds Section -->
     <section
@@ -293,7 +318,7 @@
               Our blogs are full of useful articles and tips for effective
               marketing.
             </p>
-            <a href="/blog" class="btn btn-primary"
+            <a href="/blog" class="r-button"
               >Read More <i class="fas fa-arrow-right"></i
             ></a>
           </div>
@@ -318,7 +343,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="custom-bg">
+    <footer class="custom-bg-f2">
       <div class="container">
         <div class="logo">
           <a href="/">

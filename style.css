@@ -50,25 +50,30 @@ body {
 }
 
 .btn-primary,
-.btn-secondary {
-  background-color: #ffffff;
-  color: #000000;
-  padding: 0.75rem 2rem;
-  margin-right: 1rem;
-  font-size: 1rem;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
+.btn.btn-secondary {
+  color: black !important;
+  background-color: white !important;
+  max-width: inherit !important;
+  min-width: inherit !important;
+  border-radius: 36px;
+  padding: 20px 30px;
+  font-weight: normal;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 32px;
+  transition: transform 0.3s ease, margin 0.3s ease;
+  margin: 10px;
 }
 
-.btn-primary:hover,
-.btn-secondary:hover {
-  background-color: #ffffff;
-  color: #000000;
+.btn.btn-secondary:hover {
+  transform: scale(1.1);
+  margin: 10px;
 }
+
 
 .block-overlay {
   position: relative;
-  background-color: #ffffff;
+  background-color: #FFFDD0;
   padding: 4rem 0;
 }
 
@@ -124,6 +129,12 @@ body {
   margin: 0 10px;
 }
 
+.custom-bg-f2 {
+  background-color: #028065; 
+  color: #ffffff; 
+}
+
+
 
 .header {
   padding: 15px 0;
@@ -143,6 +154,75 @@ body {
   background-color: #83DEB2;
   position: relative;
   padding: 40px 0;
+}
+
+#a1 {
+  background-color: #fff8e1;
+  padding: 80px 0;
+}
+
+.c-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.c-button:hover {
+  color: #000;
+}
+
+.r-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.r-button:hover {
+  color: #000;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 80%; 
+  margin: 0 auto;
+  opacity: 1;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 25%; 
+  flex: 0 0 auto; 
+  object-fit: cover;
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.carousel-nav button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-nav button i {
+  font-size: 1.5rem;
 }
 
 /* Section: What We Do */
