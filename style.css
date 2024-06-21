@@ -189,6 +189,24 @@ body {
   color: #000;
 }
 
+
+.f-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+.f-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+
 .carousel-container {
   overflow: hidden;
   width: 80%; 
@@ -224,6 +242,29 @@ body {
 .carousel-nav button i {
   font-size: 1.5rem;
 }
+
+.u-box-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-sm {
+  font-size: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-mobile-md {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .text-mobile-md {
+    font-size: 1.25rem;
+  }
+}
+
 
 /* Section: What We Do */
 .what-we-do {
