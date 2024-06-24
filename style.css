@@ -6,28 +6,36 @@ body {
   font-family: "GT-Walsheim";
 }
 
+/* -----fonts----- */
+
 @font-face {
   font-family: "GT-Walsheim";
   src: url("../fonts/GT-Walsheim-Ultra-Bold-Trial-BF651b7fc6c21e5.woff");
   font-weight: 700;
 }
+
 @font-face {
   font-family: "GT-Walsheim";
   src: url("../fonts/GT-Walsheim-Bold-Trial-BF651b7fc737c57.woff");
   font-weight: 600;
 }
+
 @font-face {
   font-family: "GT-Walsheim";
   src: url("../fonts/GT-Walsheim-Condensed-Light-Trial-BF651b7fc73810c.woff");
   font-weight: 400;
 }
 
+/* ----------keyframe---------- */
 @keyframes slide-in-top {
   from {
     transform: translateY(-100%);
+    /* Start from 100% above the element */
   }
+
   to {
     transform: translateY(0);
+    /* Animate to its normal position */
   }
 }
 
@@ -35,11 +43,13 @@ body {
   0% {
     transform: rotate(-360deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
+/* -----------common css---------- */
 h1,
 h2,
 h3,
@@ -73,10 +83,12 @@ img {
   display: block;
 }
 
+/* --------------all Style--------- */
 ._header_wrapper {
   position: relative;
   background-color: rgba(2, 128, 101, 0.8);
 }
+
 .video_bg {
   position: absolute;
   top: 0;
@@ -87,14 +99,17 @@ img {
   z-index: -100;
 }
 
+/* ---------------navbar--------- */
 .scrolled {
   background-color: rgba(2, 128, 101, 0.8);
   z-index: 1000;
 }
+
 .scrolled a img {
   width: 75%;
   transition: all 0.5s ease-in-out;
 }
+
 .mini_navbar {
   margin: 0 auto;
   width: 100%;
@@ -105,9 +120,11 @@ img {
 .mini_navbar_item {
   padding: 12px 15px;
 }
+
 .mini_navbar_item:last-child {
   padding-right: 0;
 }
+
 .mini_navbar_link,
 .mini_footer_navlink {
   color: #83deb2;
@@ -118,6 +135,7 @@ img {
   line-height: 1.3;
   position: relative;
 }
+
 .mini_navbar_link:focus-visible {
   box-shadow: none;
 }
@@ -139,20 +157,25 @@ img {
   border-bottom-right-radius: 10px;
   background-color: #83deb2;
 }
+
 .mini_navbar_link:hover::before {
   height: 30px;
   animation: slide-in-top 0.3s ease-in-out;
 }
+
 .navbar-nav .nav-link.show {
   color: #83deb2;
 }
+
 .mini_dropdown_menu {
   background-color: #83deb2;
   border: none;
 }
+
 .mini_dropdown_menu li:hover {
   background-color: #70c79d;
 }
+
 .mini_dropdown_item {
   color: rgb(31, 64, 69);
   font-family: "GT-Walsheim";
@@ -160,23 +183,28 @@ img {
   padding: 10px;
   transition: all 0.2s ease-in-out;
 }
+
 .mini_dropdown_item:hover {
   background: transparent;
   transform: translateX(10px);
 }
-.dropdown:hover > .mini_dropdown_menu {
+
+.dropdown:hover>.mini_dropdown_menu {
   display: block;
   width: 250px;
 }
-.dropdown:hover > .dropdown-toggle::after {
+
+.dropdown:hover>.dropdown-toggle::after {
   border-top: 0;
   border-bottom: 0.3em solid;
 }
 
+/* -----------hero section-------- */
 ._header_wrap {
   padding-top: 200px;
   padding-bottom: 100px;
 }
+
 .mini_hero_title,
 .mini_contact_title {
   font-family: "GT Walsheim", sans-serif;
@@ -187,6 +215,7 @@ img {
   color: #83deb2;
   text-align: center;
 }
+
 .mini_hero_title_2nd_line,
 .mini_contact_title_2nd_line {
   font-family: "GT Walsheim";
@@ -194,10 +223,12 @@ img {
   text-align: justify;
   font-size: 4.3rem;
 }
+
 .mini_hero_btn_div {
   display: flex;
   justify-content: center;
 }
+
 .mini_btn {
   padding: 20px 30px;
   border-radius: 50px;
@@ -213,23 +244,29 @@ img {
   justify-content: center;
   transition: all 0.5s ease-in-out;
 }
+
 .mini_btn:hover {
   transform: scale(1.05);
 }
+
 .mini_btn:focus-visible {
   outline: 0;
 }
+
 .btn_arrow {
   margin-left: 25px;
   font-size: 30px;
 }
+
 .mini_hero_btn_one {
   margin-right: 50px;
 }
 
+/* -----------expect more section------- */
 .mini_expect {
   padding: 80px 0;
 }
+
 .mini_expect_title {
   font-family: "GT Walsheim";
   color: black;
@@ -238,10 +275,12 @@ img {
   margin-bottom: 1.5625rem;
   font-weight: normal;
 }
+
 .mini_expect_p {
   margin-bottom: 1.5625rem;
   max-width: 90%;
 }
+
 .mini_btn_bg {
   position: relative;
   transition: all 0.9s ease;
@@ -249,16 +288,19 @@ img {
   margin-left: -30px;
   z-index: 1;
 }
+
 .mini_btn_bg:hover {
   transform: scale(1);
   background-color: #c3f8de;
   -webkit-box-shadow: 0px 3px 6px rgba(2, 128, 101, 0.15);
   box-shadow: 0px 3px 6px rgba(2, 128, 101, 0.15);
 }
+
 .mini_btn_bg:hover::after {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
 .mini_btn_bg::after {
   position: absolute;
   content: "";
@@ -277,12 +319,15 @@ img {
   margin-left: 35px;
 }
 
+/* ----------marketing complaxcity-------- */
+
 .mini_marketing {
   padding: 150px 0;
   background-color: #83deb2;
   background-size: cover;
   clip-path: ellipse(80% 95% at 50% 95%);
 }
+
 .mini_marketing_title {
   font-family: "GT Walsheim";
   line-height: 1.1;
@@ -293,15 +338,18 @@ img {
   text-align: center;
   margin-bottom: 80px;
 }
+
 .mini_marketing_card {
   text-align: center;
 }
+
 .mini_marketing_card_title {
   font-family: "GT Walsheim", sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
   padding-bottom: 1.2rem;
 }
+
 .mini_marketing_card_p {
   font-size: 1.1rem;
   font-weight: normal;
@@ -309,11 +357,13 @@ img {
   padding-bottom: 1.5rem;
 }
 
+/* --------our work section--------- */
 .mini_work {
   background: #83deb2;
   text-align: -webkit-center;
   padding-bottom: 150px;
 }
+
 .mini_work_title {
   font-family: "GT Walsheim";
   line-height: 1.1;
@@ -322,338 +372,473 @@ img {
   margin-bottom: 50px;
   text-align: center;
 }
+
 .mini_work_carousel_item {
   border-radius: 49% 50% 47% 53% / 28% 27% 29% 31%;
   overflow: hidden;
   max-height: 510px;
+  max-width: 90%;
+  margin: 0 auto;
   position: relative;
 }
-.mini_work_carousel_item_img {
-  display: block;
-  width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-.mini_our_work__arrow {
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  border-radius: 50px;
-  padding: 0;
-  box-shadow: 0 3px 6px rgba(2, 128, 101, 0.5);
+
+.mini_work_carousel_img {
   transition: all 0.5s ease-in-out;
 }
-.mini_our_work__arrow:hover {
+
+.mini_work_carousel_item:hover::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: rgba(2, 128, 101, 0.8);
+  width: 100%;
+  height: 100%;
+  border-radius: 49% 50% 47% 53% / 28% 27% 29% 31%;
+  transition: all 200ms ease;
+}
+
+.mini_work_carousel_item:hover>.mini_work_carousel_img {
+  transform: scale(1.15);
+}
+
+.mini_work_carousel_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  display: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #83deb2;
+  z-index: 10;
+}
+
+.mini_work_carousel_item:hover>.mini_work_carousel_title {
+  display: inline-block;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  position: relative;
+  left: -30px;
+  font-size: 30px;
+  color: black;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c3f8de;
+  opacity: 1;
+  border-radius: 100%;
+}
+
+.slick-next:before {
+  content: "🡢";
+}
+
+.slick-prev:before {
+  content: "🡠";
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 20;
+  transition: all 0.5s ease-in-out;
+}
+
+.slick-prev {
+  translate: 20px -20px;
+}
+
+.slick-prev:hover {
+  translate: 10px -20px;
+}
+
+.slick-next {
+  translate: -20px -20px;
+}
+
+.slick-next:hover {
+  translate: -10px -20px;
+}
+
+.mini_work_slider {
+  margin-bottom: 50px;
+}
+
+.mini_work button {
+  text-align: center;
+}
+
+/* ---------partnering------------ */
+.mini_partnering {
+  padding-bottom: 150px;
+  background: #83deb2;
+}
+
+.mini_partnering_title {
+  font-family: "GT Walsheim";
+  font-weight: normal;
+  text-align: center;
+  font-size: 3rem;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1.5625rem;
+}
+
+.mini_partnering_p {
+  max-width: 82%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+.mini_partenering_item {
+  margin-top: 40px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.mini_partnering_carousel_img {
+  margin: 0 auto;
+}
+
+/* ---------anounce--------- */
+.mini_anounce {
+  text-align: -webkit-center;
+  padding-bottom: 150px;
+  background: #83deb2;
+  clip-path: ellipse(80% 95% at 50% 5%);
+  margin-bottom: 100px;
+}
+
+.mini_anounce_title {
+  font-family: "GT Walsheim";
+  font-size: 1.8rem !important;
+  font-weight: bold !important;
+  line-height: 1.4 !important;
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.mini_anounce_p {
+  max-width: 55%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+/* ------------what we do---------- */
+.mini_whatwedo {
+  text-align: -webkit-center;
+  margin-bottom: 150px;
+}
+
+.mini_whatwedo_heading {
+  font-family: "GT Walsheim", sans-serif !important;
+  color: #028065 !important;
+  font-size: 1.2rem !important;
+  font-weight: normal !important;
+  line-height: 1.4 !important;
+  margin-bottom: 20px;
+}
+
+.mini_whatwedo_all_title {
+  margin-bottom: 80px;
+}
+
+.mini_whatwedo_tiltle {
+  font-family: "GT Walsheim";
+  line-height: 1.1 !important;
+  font-size: 3rem !important;
+  font-weight: normal !important;
+  margin-bottom: 20px;
+}
+
+.mini_whatwedo_tiltle a {
+  color: black;
+}
+
+.mini_whatwedo_tiltle a:hover {
+  color: #028065 !important;
+}
+
+/* --------Inside minds--------- */
+.mini_inside {
+  margin-bottom: 100px;
+}
+
+.mini_inside_title {
+  font-family: "GT Walsheim";
+  line-height: 1.1;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5625rem;
+}
+
+.mini_inside_p {
+  margin-bottom: 50px;
+}
+
+.mini_inside_right {
+  position: relative;
+}
+
+.mini_inside_right img {
+  border-radius: 10px;
+}
+
+.video_button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+.video_button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background-image: url(/assets/images/video-button-outer.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  animation: rotate 20s linear infinite;
+}
+
+.btn_video {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c3f8de;
+  border-radius: 100%;
+  font-size: 45px;
+  padding: 0;
+  border: none;
+  padding-left: 5px;
+}
+
+/* ------contact---------- */
+.mini_contact {
+  text-align: -webkit-center;
+  padding-top: 200px;
+  clip-path: ellipse(80% 95% at 50% 95%);
+  background-color: #028065;
+  padding-bottom: 50px;
+}
+
+.mini_contact hr {
+  margin-top: 100px;
+  color: #f6efe7;
+}
+
+/* --------footer----- */
+.mini_footer {
+  background-color: #028065;
+}
+
+.footer_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 3.125rem;
+}
+
+.footer_nav_logo {
+  width: 20%;
+}
+
+.footer_items_div ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer_email_phone {
+  margin-bottom: 80px;
+}
+
+.footer_email_phone p {
+  font-family: "GT Walsheim";
+  line-height: 1.1;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #83deb2;
+  text-align: right;
+}
+
+.footer_copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_copyright p {
+  font-family: "GT Walsheim";
+  line-height: 1.1;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #83deb2;
+  display: flex;
+  align-items: center;
+}
+
+.footer_copyright p a {
+  color: #83deb2;
+  margin: 0 5px;
+}
+
+.footer_copyright p a:hover {
+  text-decoration: underline;
+}
+
+/* -----------what we do page style----------- */
+
+/* ---------what we do header-------- */
+.what_header_wrapper {
+  background-image: url(../images/Inner-Hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* -----------what we do hero---------- */
+.what_header_wrap {
+  padding-top: 250px;
+  padding-bottom: 100px;
+}
+
+.mini_what_hero_title {
+  font-family: "GT Walsheim";
+  line-height: 1.1;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #83deb2;
+  max-width: inherit;
+  text-align: left;
+}
+
+/* ---------------what we do service--------- */
+.mini_what_service {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.mini_what_service_title {
+  font-family: "GT Walsheim";
+  font-size: 1.8rem !important;
+  font-weight: bold !important;
+  line-height: 1.4 !important;
+  margin-bottom: 80px;
+}
+
+.mini_what_service_card {
+  padding: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.mini_what_service_card:hover {
   transform: scale(1.1);
 }
 
-.mini_carousel_icon {
-  font-size: 24px;
+.mini_what_service_card_title {
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: black;
 }
 
-.mini_testimonial {
-  padding-top: 100px;
-  padding-bottom: 150px;
-  background: #f6efe7;
-}
-.mini_testimonial_quote {
-  margin-bottom: 3.125rem;
-  position: relative;
-}
-.mini_testimonial_text {
-  max-width: 75%;
-  margin: 0 auto;
-  color: #000;
-  text-align: justify;
-  font-size: 1.1rem;
-  font-family: "GT Walsheim";
-  font-weight: 400;
-  line-height: 1.3;
-}
-.mini_testimonial_blockquote {
-  position: relative;
-  color: #000;
-  font-size: 10rem;
-  line-height: 0.8;
-  text-align: center;
-}
-.mini_testimonial_title {
-  font-family: "GT Walsheim";
-  font-size: 1.7rem;
-  line-height: 1.3;
-  font-weight: 700;
-  text-align: center;
-  color: black;
-  margin-top: 3.125rem;
-  margin-bottom: 0.625rem;
-}
-.mini_testimonial_author {
-  color: black;
-  font-family: "GT Walsheim";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.3;
-  text-align: center;
-}
-.mini_testimonial_line {
-  max-width: 50px;
-  height: 1px;
-  border-bottom: 3px solid #83deb2;
-  margin: 2.25rem auto 1.625rem auto;
+.mini_what_service_card:hover>.mini_what_service_card_title {
+  color: #70c79d;
 }
 
-.mini_contact {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background: #83deb2;
-  clip-path: ellipse(80% 95% at 50% 0%);
+/* ----------- what we do website---------- */
+.mini_what_websites,
+.mini_what_marketing,
+.mini_what_strategy,
+.mini_what_videography {
+  margin-bottom: 80px;
 }
-.mini_contact_text {
-  font-family: "GT Walsheim", sans-serif;
+
+.mini_what_hr {
+  opacity: 1;
+  height: 2px;
+  background: black;
+  color: black;
+  margin-top: 80px;
+}
+
+.mini_what_website_title,
+.mini_what_marketing_title,
+.mini_what_strategy_title,
+.mini_what_videography_title {
+  font-family: "GT Walsheim";
   line-height: 1.1;
-  font-size: 2rem;
-  font-weight: 400;
-  max-width: 60%;
-  margin: 0 auto;
-  text-align: center;
-  color: black;
-  margin-bottom: 50px;
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 30px;
 }
-.mini_contact_btn_div {
-  display: flex;
-  justify-content: center;
+
+.mini_what_items {
+  margin-bottom: 30px;
 }
-.mini_contact_btn {
-  padding: 20px 30px;
-  border-radius: 50px;
-  border: none;
-  background-color: white;
-  line-height: 1.3;
+
+.mini_what_item {
   font-size: 20px;
-  font-family: "GT Walsheim ", sans-serif;
-  font-weight: 400;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease-in-out;
-}
-.mini_contact_btn:hover {
-  transform: scale(1.05);
-}
-.mini_contact_btn:focus-visible {
-  outline: 0;
-}
-.btn_contact_arrow {
-  margin-left: 25px;
-  font-size: 30px;
+  margin-bottom: 10px;
+  line-height: 1.2rem;
 }
 
-.mini_footer {
-  background-color: rgb(31, 64, 69);
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-.mini_footer_logo {
-  max-width: 350px;
-  margin-bottom: 3.5rem;
-  margin-left: -15px;
-}
-.mini_footer_navlink {
-  color: #c3f8de;
-  font-size: 20px;
-  line-height: 1.3;
-  font-family: "GT-Walsheim";
-  font-weight: 400;
-}
-.mini_footer_navlink:hover {
-  color: #c3f8de;
-  text-decoration: none;
-}
-.mini_footer_navitem {
-  padding-bottom: 12px;
-}
-.mini_footer_navitem:last-child {
-  padding-bottom: 0;
+.mini_what_item span {
+  margin-right: 10px;
 }
 
-.mini_footer .mini_footer_navitem a {
-  padding: 0;
+/* ----------work -------- */
+.mini_what_work {
+  margin-bottom: 100px;
+  text-align: -webkit-center;
 }
 
-.mini_footer .mini_footer_navitem:hover a {
-  color: #83deb2;
+.mini_what_work_title {
+  font-family: "GT Walsheim ";
+  line-height: 1.1;
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 30px;
 }
 
-.mini_footer_social_links {
-  margin-top: 2rem;
-}
+/* ----------responsive------- */
+/* ----xl device---- */
+@media (max-width: 1399px) {}
 
-.mini_footer_social_link {
-  color: #c3f8de;
-  font-size: 1.5rem;
-  margin-right: 1rem;
-  transition: color 0.3s ease-in-out;
-}
+/* ------large device------ */
+@media (max-width: 1199px) {
 
-.mini_footer_social_link:hover {
-  color: #83deb2;
-}
-
-.mini_footer_address {
-  font-family: "GT-Walsheim";
-  font-size: 1rem;
-  font-weight: 400;
-  color: #c3f8de;
-  margin-top: 3rem;
-}
-
-.mini_footer_address p {
-  margin-bottom: 0.5rem;
-}
-
-.mini_footer_copyright {
-  font-family: "GT-Walsheim";
-  font-size: 0.875rem;
-  font-weight: 400;
-  color: #c3f8de;
-  margin-top: 2rem;
-  text-align: center;
-}
-
-/* Responsive Styles */
-
-@media (max-width: 1200px) {
-  .mini_hero_title,
-  .mini_contact_title {
-    font-size: 3.5rem;
-  }
-
-  .mini_expect_title {
-    font-size: 2.5rem;
-  }
-
-  .mini_marketing_title {
-    font-size: 2.5rem;
-  }
-
-  .mini_work_title {
-    font-size: 2.5rem;
-  }
-
-  .mini_contact_text {
-    font-size: 1.75rem;
+  .mini_navbar_link,
+  .mini_footer_navlink {
+    font-size: 0.98rem;
   }
 }
 
-@media (max-width: 992px) {
-  .mini_navbar {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
+/* -----medium device----- */
+@media (max-width: 991px) {
+  .mini_navbar_link::before {
+    position: static;
   }
 
-  .mini_navbar_item {
-    padding: 10px 0;
-  }
-
-  .mini_hero_title,
-  .mini_contact_title {
-    font-size: 3rem;
-  }
-
-  .mini_expect_title {
-    font-size: 2rem;
-  }
-
-  .mini_marketing_title {
-    font-size: 2rem;
-  }
-
-  .mini_work_title {
-    font-size: 2rem;
-  }
-
-  .mini_contact_text {
-    font-size: 1.5rem;
+  .show {
+    background-color: #028065;
   }
 }
 
-@media (max-width: 768px) {
-  .mini_hero_title,
-  .mini_contact_title {
-    font-size: 2.5rem;
-  }
-
-  .mini_expect_title {
-    font-size: 1.75rem;
-  }
-
-  .mini_marketing_title {
-    font-size: 1.75rem;
-  }
-
-  .mini_work_title {
-    font-size: 1.75rem;
-  }
-
-  .mini_contact_text {
-    font-size: 1.25rem;
-  }
-
-  .mini_work_carousel_item {
-    max-height: 300px;
-  }
-
-  .mini_footer_logo {
-    max-width: 250px;
-  }
-
-  .mini_footer_address {
-    font-size: 0.875rem;
-  }
-
-  .mini_footer_copyright {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .mini_navbar_item {
-    padding: 5px 0;
-  }
-
-  .mini_hero_title,
-  .mini_contact_title {
-    font-size: 2rem;
-  }
-
-  .mini_expect_title {
-    font-size: 1.5rem;
-  }
-
-  .mini_marketing_title {
-    font-size: 1.5rem;
-  }
-
-  .mini_work_title {
-    font-size: 1.5rem;
-  }
-
-  .mini_contact_text {
-    font-size: 1rem;
-  }
-
-  .mini_footer_logo {
-    max-width: 200px;
-  }
-
-  .mini_footer_address {
-    font-size: 0.75rem;
-  }
-
-  .mini_footer_copyright {
-    font-size: 0.625rem;
-  }
-}
+/* -----small device----- */
+@media (max-width: 767px) {}
